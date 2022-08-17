@@ -1,0 +1,45 @@
+.container-fluid {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  width: 40px;
+  color: #3535f3;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-item {
+  width: 150px;
+  height: 150px;
+  /* margin: 15px;
+  padding: 15px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+
+.feature-item:hover {
+  background-color: #e7ebf8;
+}
+
+.feature-item p {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+}

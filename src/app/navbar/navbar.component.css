@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.container-fluid {
+  font-family: "Poppins", sans-serif;
+  background-color: #3535f3;
+  display: flex;
+  padding: 18px 20px;
+  align-items: center;
+}
+
+.container-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-right {
+  display: flex;
+  width: inherit;
+  justify-content: flex-end;
+}
+
+.logo {
+  /* padding: 0px 20px; */
+}
+
+.jioLogo {
+  width: 60px;
+}
+
+.items {
+  display: flex;
+  cursor: pointer;
+}
+
+.item {
+  font-weight: 700;
+  color: #eefaff;
+  padding: 0px 30px;
+}
+
+.item a {
+  color: #eefaff;
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  /* margin-left: auto; */
+  align-items: center;
+}
+
+.search-bar {
+  height: 2.2rem;
+  width: 20rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #0a2885;
+  color: white;
+  padding: 0px 0px 0px 40px;
+}
+
+.search-bar::placeholder {
+  /* padding-left: 40px; */
+  color: white;
+}
+
+.search-bar:hover {
+  background-color: #061951;
+}
+
+.icons {
+  padding: 0px 20px;
+}
+
+.icon {
+  /* height: 3rem; */
+  width: 1.5rem;
+  /* padding: 0px; */
+  color: white;
+}
+
+.profile-icon {
+  border-radius: 50%;
+  color: #3535f3;
+  background-color: white;
+}
+
+.icon-anchor {
+  padding: 0px 10px;
+}
+
+.searchBar {
+  position: relative;
+}
+
+.searchBar fa-icon {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  color: white;
+}

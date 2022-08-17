@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.container-fluid {
+  font-family: "Poppins", sans-serif;
+  height: 70vh;
+  background: url(../../assets/Banner-DhanDhanDhan-desktop-new.jpg);
+
+  /* background-position: center center; */
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+}
+
+.content {
+  width: 50%;
+  float: left;
+}
+
+.heading {
+  color: white;
+  font-weight: bolder;
+  font-size: 70px;
+  padding: 35px 35px 0px 35px;
+  letter-spacing: -1.92px;
+  line-height: 1.0625;
+}
+
+.sliderText {
+  color: white;
+  font-weight: 500;
+  padding: 0px 35px 10px 35px;
+  font-size: 18px;
+  letter-spacing: -0.09px;
+  line-height: 1.3333333333;
+}
+
+.buttons {
+  padding: 0px 35px;
+}
+
+.get-jio-sim {
+  border: none;
+  height: 45px;
+  margin: 0px 20px 0px 0px;
+  border-radius: 25px;
+  padding: 0px 20px;
+  color: white;
+  background-color: #1144e4;
+  font-weight: 700;
+}
+
+.lets-celeb {
+  border: 1px solid white;
+  height: 45px;
+  margin: 0px 20px 0px 0px;
+  border-radius: 25px;
+  padding: 0px 20px;
+  color: white;
+  background-color: transparent;
+  font-weight: 700;
+}
