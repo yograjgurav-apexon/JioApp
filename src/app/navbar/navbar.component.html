@@ -2,24 +2,12 @@
   <div class="container-left">
     <div class="logo">
       <a href="#">
-        <img class="jioLogo" src="../../assets/Jio-Logo.png" alt="" />
+        <img class="jioLogo" src="{{ jioLogo }}" alt="" />
       </a>
     </div>
-    <div class="items">
+    <div *ngFor="let item of navbarList">
       <div class="item">
-        <a href="#">Mobile</a>
-      </div>
-      <div class="item">
-        <a href="#">JioFiber</a>
-      </div>
-      <div class="item">
-        <a href="#">Business</a>
-      </div>
-      <div class="item">
-        <a href="#">Shop</a>
-      </div>
-      <div class="item">
-        <a href="#">Apps</a>
+        <a href="#">{{ item }}</a>
       </div>
     </div>
   </div>

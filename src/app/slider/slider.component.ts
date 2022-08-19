@@ -8,6 +8,7 @@ import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 })
 export class SliderComponent implements OnInit {
   faPlayCircle = faPlayCircle;
+  bgImg: string = 'url(../../assets/Banner-DhanDhanDhan-desktop-new.jpg)';
 
   constructor() {}
 

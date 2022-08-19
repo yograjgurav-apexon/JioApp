@@ -1,51 +1,15 @@
 <div class="container-fluid">
   <div class="jioLinks">
-    <div class="jioLinkList">
+    <div class="jioLinkList" *ngFor="let item of footerList">
       <div class="title">
-        <p>Our Offerings</p>
+        <p>{{ item.listItem }}</p>
       </div>
       <div class="list-item">
-        <p class="list-item-content">Mobile</p>
-        <p class="list-item-content">Fiber</p>
-        <p class="list-item-content">Business</p>
-        <p class="list-item-content">Apps</p>
-        <p class="list-item-content">Shop</p>
-      </div>
-    </div>
-    <div class="jioLinkList">
-      <div class="title">
-        <p>Support</p>
-      </div>
-      <div class="list-item">
-        <p class="list-item-content">Explore Support</p>
-        <p class="list-item-content">Locate us</p>
-        <p class="list-item-content">FAQ</p>
-        <p class="list-item-content">Track Order</p>
-        <p class="list-item-content">Contact us</p>
-      </div>
-    </div>
-    <div class="jioLinkList">
-      <div class="title">
-        <p>Our company</p>
-      </div>
-      <div class="list-item">
-        <p class="list-item-content">Reliance Industries</p>
-        <p class="list-item-content">Reliance Foundation</p>
-        <p class="list-item-content">JioLife</p>
-        <p class="list-item-content">Careers</p>
-        <p class="list-item-content">Investor relations</p>
-      </div>
-    </div>
-    <div class="jioLinkList">
-      <div class="title">
-        <p>Useful links</p>
-      </div>
-      <div class="list-item">
-        <p class="list-item-content">Get Jio SIM</p>
-        <p class="list-item-content">Get JioFiber</p>
-        <p class="list-item-content">Recharge</p>
-        <p class="list-item-content">Pay Bills</p>
-        <p class="list-item-content">Login</p>
+        <p class="list-item-content">{{ item.listItems.item1 }}</p>
+        <p class="list-item-content">{{ item.listItems.item2 }}</p>
+        <p class="list-item-content">{{ item.listItems.item3 }}</p>
+        <p class="list-item-content">{{ item.listItems.item4 }}</p>
+        <p class="list-item-content">{{ item.listItems.item5 }}</p>
       </div>
     </div>
   </div>
@@ -53,20 +17,8 @@
     <div class="jioSocialDiv">
       <h3>Connect with us</h3>
       <div class="socialIcons">
-        <div class="socialIconDiv">
-          <fa-icon [icon]="faTwitter" class="socialIcon"></fa-icon>
-        </div>
-        <div class="socialIconDiv">
-          <fa-icon [icon]="faInstagram" class="socialIcon"></fa-icon>
-        </div>
-        <div class="socialIconDiv">
-          <fa-icon [icon]="faFacebook" class="socialIcon"></fa-icon>
-        </div>
-        <div class="socialIconDiv">
-          <fa-icon [icon]="faYoutube" class="socialIcon"></fa-icon>
-        </div>
-        <div class="socialIconDiv">
-          <fa-icon [icon]="faLinkedin" class="socialIcon"></fa-icon>
+        <div class="socialIconDiv" *ngFor="let item of iconsList">
+          <fa-icon [icon]="item" class="socialIcon"></fa-icon>
         </div>
       </div>
     </div>
@@ -74,16 +26,8 @@
       <div class="jioAppDownloadTextDiv">
         <h3>Download MyJio</h3>
         <div class="jioAppDownloadImages">
-          <img
-            class="jioAppDownloadImage"
-            src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/G-Play.svg"
-            alt=""
-          />
-          <img
-            class="jioAppDownloadImage"
-            src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/AppStore.svg"
-            alt=""
-          />
+          <img class="jioAppDownloadImage" [src]="androidImg" alt="" />
+          <img class="jioAppDownloadImage" [src]="iosImg" alt="" />
         </div>
       </div>
     </div>
@@ -114,9 +58,12 @@
   </div>
   <div class="footer-right">
     <div class="footer-right-textDiv">
-      <div class="footer-right-text">Press release</div>|
-      <div class="footer-right-text">Regulatory</div>|
-      <div class="footer-right-text">Policies</div>|
+      <div class="footer-right-text">Press release</div>
+      |
+      <div class="footer-right-text">Regulatory</div>
+      |
+      <div class="footer-right-text">Policies</div>
+      |
       <div class="footer-right-text">Terms & condition</div>
     </div>
   </div>

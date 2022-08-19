@@ -1,4 +1,11 @@
-<div class="container-fluid">
+<div
+  class="container-fluid"
+  [ngStyle]="{
+    background: bgImg,
+    'background-size': 'cover',
+    'backgroud-repeat': 'no-repeat'
+  }"
+>
   <div class="content">
     <div class="title">
       <p class="heading">The best things in life are FREE</p>
@@ -10,7 +17,8 @@
     </div>
     <div class="buttons">
       <button class="get-jio-sim">Get Jio SIM</button>
-      <button class="lets-celeb">Let's celebrate
+      <button class="lets-celeb">
+        Let's celebrate
         <fa-icon [icon]="faPlayCircle" class="playIcon"></fa-icon>
       </button>
     </div>
